@@ -4,10 +4,15 @@ body {
     justify-content: center;
     background-color: #FAFAFA;
     width: 100%;
+    padding-bottom: 20px;
 }
 
 * {
     box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 a {
@@ -74,16 +79,18 @@ a {
     border-radius: 3px;
     background-color: #fafafa;
     border: 1px solid #bdbdbd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
-.pesquisar h3 {
+input::placeholder {
     font-size: 12px;
     font-weight: 400;
     line-height: 14.06px;
     color: #979797;
+}
+
+input:focus {
+    outline: none;
 }
 
 .icons {
@@ -92,10 +99,16 @@ a {
     justify-content: space-between;
 }
 
-.icon {
+.icons ion-icon,
+.barra-topo-mobile ion-icon,
+.barra-inferior ion-icon {
     height: 23px;
     width: 23px;
-    cursor: pointer;
+}
+
+.icones-post ion-icon {
+    height: 19px;
+    width: 19px;
 }
 
 .borda-menu {
@@ -120,7 +133,7 @@ a {
     overflow: hidden;
 }
 
-.storie {
+.caixa-stories div {
     height: 84px;
     display: flex;
     flex-direction: column;
@@ -146,7 +159,7 @@ a {
     left: 11px;
 }
 
-.storie p {
+.caixa-stories div p {
     font-weight: 400;
     font-size: 12px;
     line-height: 14.06px;
@@ -158,36 +171,22 @@ a {
     color: #262626;
 }
 
-
-.seta {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    right: 8px;
-    top: 46px;
-    width: 30px;
-    height: 30px;
-}
-
-.seta-fundo {
-    width: 21px;
-    height: 21px;
-    background-color: rgba(52,52,52,0.4);
-    border-radius: 50%;
-    color: white;
-    box-shadow: 0 2px 6px rgb(52,52,52,0.8);
-    position: relative;
-}
-
 .icone {
+    position: absolute;
+    color: white;
+    border-radius: 50%;
     width: 29px;
     height: 29px;
-    background-color: rgba(0,0,0,0);
     border-radius: 50%;
     position: absolute;
-    top: -5px;
-    left: -4px;
+    top: calc((100% / 2) - (26px / 2));
+    right: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.icone:hover {
+    width: 30px;
+    height: 30px;
 }
 
 .coluna-posts {
@@ -231,7 +230,20 @@ a {
     color: #262626;
 }
 
-.post img {
+.canal div {
+    height: 31px;
+}
+
+.canal h2 {
+    margin: 3px 0 17px 0;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14.06px;
+    color: #8E8E8E;
+}
+
+.post img,
+.post video {
     width: 100%;
 }
 
@@ -241,7 +253,7 @@ a {
     margin: 7px 17px 8px;
 }
 
-.esquerda {
+.icones-post div {
     display: flex;
     width: 95px;
     justify-content: space-between;
@@ -341,26 +353,14 @@ b {
     color: #262626;
 }
 
-.secao {
+.canais > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 17px;
 }
 
-.nome {
-    height: 31px;
-}
-
-.nome h2 {
-    margin: 3px 0 17px 0;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 14.06px;
-    color: #8E8E8E;
-}
-
-.seguir {
+.canais > div > p {
     font-weight: 500;
     font-size: 12px;
     line-height: 14.06px;
@@ -392,7 +392,6 @@ body img, p, h1, h2, ion-icon{
     color: rgb(150,0,255);
 }
 
-
 @media (max-width: 935px) {
     .sidebar {
         display: none;
@@ -418,7 +417,7 @@ body img, p, h1, h2, ion-icon{
 @media (max-width: 614px) {
 
     .barra-topo,
-    .seta {
+    .icone {
         display: none;
     }
 
@@ -439,9 +438,10 @@ body img, p, h1, h2, ion-icon{
         background-color: #FAFAFA;
         border: none;
         margin-top: 17px;
+        overflow: scroll;
     }
 
-    .storie {
+    .caixa-stories div {
         width: auto;
         height: auto;
     }
@@ -458,7 +458,7 @@ body img, p, h1, h2, ion-icon{
         left: 2.1vw;
     }
     
-    .storie p {
+    .caixa-stories div p {
         width: 12.7vw;
     }
 
@@ -468,6 +468,7 @@ body img, p, h1, h2, ion-icon{
 
     .post {
         width: 100vw;
+        height: auto;
         border-radius: 0;
         padding-bottom: 2vw;
         margin-bottom: 53px;

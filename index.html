@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
 
     <title>Instagram</title>
 </head>
@@ -28,22 +28,20 @@
                 </a>
             </div>
 
-            <div class="pesquisar">
-                <h3>Pesquisar</h3>
-            </div>
+            <input class="pesquisar" placeholder="Pesquisar"/>
 
             <div class="icons">
-                <ion-icon class="icon" name="paper-plane-outline"></ion-icon>
-                <ion-icon class="icon" name="compass-outline"></ion-icon>
-                <ion-icon class="icon" name="heart-outline"></ion-icon>
-                <ion-icon class="icon" name="person-outline"></ion-icon>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+                <ion-icon name="compass-outline"></ion-icon>
+                <ion-icon name="heart-outline"></ion-icon>
+                <ion-icon name="person-outline"></ion-icon>
             </div>
         </div>
 
         <div class="barra-topo-mobile">
             <ion-icon class="icon-logo" name="logo-instagram"></ion-icon>
             <img src="./img/logo.png" alt="instagram">
-            <ion-icon class="icon" name="paper-plane-outline"></ion-icon>
+            <ion-icon name="paper-plane-outline"></ion-icon>
         </div>
 
         <div class="borda-menu"></div>
@@ -53,51 +51,48 @@
     <div class="conteudo">
         <div class="postagens">
             <div class="caixa-stories">
-                <div class="storie">
+                <div>
                     <img class="fundo" src="./img/stories/stories_background.jpg">
                     <img class="foto-perfil" src="./img/stories/9gag 1.svg" alt="9gag">
                     <p>9gag</p>
                 </div>
-                <div class="storie">
+                <div>
                     <img class="fundo" src="./img/stories/stories_background.jpg">
                     <img class="foto-perfil" src="./img/stories/meowed 1.svg" alt="meowed">
                     <p>meowed</p>
                 </div>
-                <div class="storie">
+                <div>
                     <img class="fundo" src="./img/stories/stories_background.jpg">
                     <img class="foto-perfil" src="./img/stories/barked 1.svg" alt="barked">
                     <p>barked</p>
                 </div>
-                <div class="storie">
+                <div>
                     <img class="fundo" src="./img/stories/stories_background.jpg">
                     <img class="foto-perfil" src="./img/stories/nathanwpylestrangeplanet 1.svg" alt="nathanwpylestrangeplanet">
                     <p>nathanwpylestrangeplanet</p>
                 </div>
-                <div class="storie">
+                <div>
                     <img class="fundo" src="./img/stories/stories_background.jpg">
                     <img class="foto-perfil" src="./img/stories/wawawiwacomicsa 1.svg" alt="wawawiwacomicsa">
                     <p>wawawiwacomicsa</p>
                 </div>
-                <div class="storie">
+                <div>
                     <img class="fundo" src="./img/stories/stories_background.jpg">
                     <img class="foto-perfil" src="./img/stories/respondeai 1.svg" alt="respondeai">
                     <p>respondeai</p>
                 </div>
-                <div class="storie">
+                <div>
                     <img class="fundo" src="./img/stories/stories_background.jpg">
                     <img class="foto-perfil" src="./img/stories/filomoderna 1.svg" alt="filomoderna">
                     <p>filomoderna</p>
                 </div>
-                <div class="storie">
+                <div>
                     <img class="fundo" src="./img/stories/stories_background.jpg">
                     <img class="foto-perfil" src="./img/stories/memeriagourmet 1.svg" alt="memeriagourmet">
                     <p>memeriagourmet</p>
                 </div>
-                <div class="seta">
-                    <div class="seta-fundo">
-                        <ion-icon class="icone" name="chevron-forward-circle"></ion-icon>
-                    </div>
-                </div>
+                
+                <ion-icon class="icone" name="chevron-forward-circle"></ion-icon>
             </div>
 
 
@@ -115,10 +110,10 @@
                     </div>
                     <img src="./img/post/gato-telefone 1.svg" alt="gato">
                     <div class="icones-post">
-                        <div class="esquerda">
-                            <ion-icon class="icon heart" name="heart-outline"></ion-icon>
-                            <ion-icon class="icon" name="chatbubble-outline"></ion-icon>
-                            <ion-icon class="icon" name="paper-plane-outline"></ion-icon>
+                        <div>
+                            <ion-icon class="heart" name="heart-outline"></ion-icon>
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                            <ion-icon name="paper-plane-outline"></ion-icon>
                         </div>
                         <ion-icon class="icon bookmark" name="bookmark-outline"></ion-icon>
                     </div>
@@ -142,8 +137,8 @@
                     <div class="icones-post">
                         <div class="esquerda">
                             <ion-icon class="icon heart" name="heart-outline"></ion-icon>
-                            <ion-icon class="icon" name="chatbubble-outline"></ion-icon>
-                            <ion-icon class="icon" name="paper-plane-outline"></ion-icon>
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                            <ion-icon name="paper-plane-outline"></ion-icon>
                         </div>
                         <ion-icon class="icon bookmark" name="bookmark-outline"></ion-icon>
                     </div>
@@ -162,12 +157,15 @@
                         </div>
                         <ion-icon name="ellipsis-horizontal"></ion-icon>
                     </div>
-                    <img src="./img/post/gato 3.jpg" alt="gato">
+                    <video src="./video/video.mp4" controls="controls">
+                        <source src="./video/video.mp4" type="video/mp4">
+                        <source src="./video/video.ogv" type="video/ogv">
+                    </video>
                     <div class="icones-post">
                         <div class="esquerda">
                             <ion-icon class="icon heart" name="heart-outline"></ion-icon>
-                            <ion-icon class="icon" name="chatbubble-outline"></ion-icon>
-                            <ion-icon class="icon" name="paper-plane-outline"></ion-icon>
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                            <ion-icon name="paper-plane-outline"></ion-icon>
                         </div>
                         <ion-icon class="icon bookmark" name="bookmark-outline"></ion-icon>
                     </div>
@@ -175,7 +173,31 @@
                         <img src="./img/stories/9gag 1.svg">
                         <p>Curtido por <b>9gag</b> e <b>outras 83.721 pessoas</b></p>
                     </div>
-                </div>            
+                </div>  
+                <div class="post">
+                    <div class="topo">
+                        <div class="canal">
+                            <img src="./img/stories/meowed 1.svg" alt="meowed">
+                            <a href="https://www.instagram.com/meowed/" target="_blank">
+                                <p>meowed</p>
+                            </a>
+                        </div>
+                        <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </div>
+                    <img src="./img/post/gato 3.jpg" alt="gato">
+                    <div class="icones-post">
+                        <div class="esquerda">
+                            <ion-icon class="icon heart" name="heart-outline"></ion-icon>
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                            <ion-icon name="paper-plane-outline"></ion-icon>
+                        </div>
+                        <ion-icon class="icon bookmark" name="bookmark-outline"></ion-icon>
+                    </div>
+                    <div class="visualizacao">
+                        <img src="./img/stories/9gag 1.svg">
+                        <p>Curtido por <b>9gag</b> e <b>outras 83.721 pessoas</b></p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -195,65 +217,55 @@
                 </div>
 
                 <div class="canais">
-                    <div class="secao">
-                        <div class="canal direita">
+                    <div>
+                        <div class="canal">
                             <img src="./img/sidebar/badvibesmemes 1.svg" alt="bad.vibes.memes">
-                            <div class="nome">
+                            <div>
                                 <p>bad.vibes.memes</p>
                                 <h2>Segue você</h2>
                             </div>
                         </div>
-                        <div class="seguir">
-                            <p>Seguir</p>
-                        </div>
+                        <p>Seguir</p>
                     </div>
-                    <div class="secao">
-                        <div class="canal direita">
+                    <div>
+                        <div class="canal">
                             <img src="./img/sidebar/chibirdart 1.svg" alt="chibirdart">
-                            <div class="nome">
+                            <div>
                                 <p>chibirdart</p>
                                 <h2>Segue você</h2>
                             </div>
                         </div>
-                        <div class="seguir">
-                            <p>Seguir</p>
-                        </div>
+                        <p>Seguir</p>
                     </div>
-                    <div class="secao">
-                        <div class="canal direita">
+                    <div>
+                        <div class="canal">
                             <img src="./img/sidebar/razoesparaacreditar 1.svg" alt="razoesparaacreditar">
-                            <div class="nome">
+                            <div>
                                 <p>razoesparaacreditar</p>
                                 <h2>Novo no Instagram</h2>
                             </div>
                         </div>
-                        <div class="seguir">
-                            <p>Seguir</p>
-                        </div>
+                        <p>Seguir</p>
                     </div>
-                    <div class="secao">
-                        <div class="canal direita">
+                    <div>
+                        <div class="canal">
                             <img src="./img/post/adorableanimals 2.svg" alt="adorableanimals">
-                            <div class="nome">
+                            <div>
                                 <p>adorableanimals</p>
                                 <h2>Segue você</h2>
                             </div>
                         </div>
-                        <div class="seguir">
-                            <p>Seguir</p>
-                        </div>
+                        <p>Seguir</p>
                     </div>
-                    <div class="secao">
-                        <div class="canal direita">
+                    <div>
+                        <div class="canal">
                             <img src="./img/sidebar/smallcutecats 1.svg" alt="smallcutecats">
-                            <div class="nome">
+                            <div>
                                 <p>smallcutecats</p>
                                 <h2>Segue você</h2>
                             </div>
                         </div>
-                        <div class="seguir">
-                            <p>Seguir</p>
-                        </div>
+                        <p>Seguir</p>
                     </div>
                 </div>
             </div>
@@ -268,11 +280,11 @@
     <div class="borda-menu inferior"></div>
     
     <div class="barra-inferior">
-        <ion-icon class="icon" name="home"></ion-icon>
-        <ion-icon class="icon" name="search-outline"></ion-icon>
-        <ion-icon class="icon" name="add-circle-outline"></ion-icon>
-        <ion-icon class="icon" name="heart-outline"></ion-icon>
-        <ion-icon class="icon" name="person-outline"></ion-icon>
+        <ion-icon name="home"></ion-icon>
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-icon name="add-circle-outline"></ion-icon>
+        <ion-icon name="heart-outline"></ion-icon>
+        <ion-icon name="person-outline"></ion-icon>
     </div>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
